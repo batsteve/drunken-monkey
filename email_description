@@ -1,0 +1,13 @@
+I've started a github (first time evah, woo!) with Matlab code that simulates the MMT and K-S equations and saves the output.  I think I've been saving as .mat files, which may not be the best format to interface with srs bsns C machine learning libraries.  That should be an easy fix.
+
+The Github repo is called "drunken-monkey".  Feel free to deface it as you see fit, or let me know if there's a better way to share code.
+
+I've used the MMT simulation data a lot, so I can vouch for its goodness and maybe troubleshoot it too.  On the other hand, that means that I had to rip out its still beating heart from other projects--I think there isn't too much gunk hanging off of it.
+
+MMT might be the best equation to start with.  The output is in the form of a 8192x6000 array:  it represents a periodic domain discretized in 8192 points, that has been integrated forwards in time 6000 steps.  Usually, I drop the first ~1000 timesteps to just keep the `steady-state' data, but our goals probably don't care about that much. 
+
+I stole the K-S code from my labmate, and it probably works.  I'll go ahead and learn more about it.
+
+I'm working on turning the Kolmogorov Flow code into something that I won't feel horribly embarrassed exposing to the world.  Hopefully I'll have that done this afternoon.
+
+Stephen
